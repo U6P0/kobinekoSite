@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\MountainController;
 
 /*
 |--------------------------------------------------------------------------
@@ -25,6 +26,7 @@ Route::get('/', function () {
     return view('index');
 });
 
+Route::get('/mountain', [MountainController::class, 'index']);
 
 /*
 Route::prefix('auth')->group(function () {
