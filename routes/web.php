@@ -15,8 +15,14 @@ use App\Http\Controllers\AuthController;
 |
 */
 
+/*
 Route::get('/', function () {
     return view('welcome');
+});
+*/
+
+Route::get('/', function () {
+    return view('index');
 });
 
 
@@ -29,4 +35,5 @@ Route::prefix('auth')->group(function () {
 Route::prefix('auth')->group(function () {
     Route::get('/twitter', [AuthController::class, 'login']);
     Route::get('/twitter/callback', [AuthController::class, 'callback']);
+    Route::get('/twitter/logout', [AuthController::class, 'logout']);
 });
