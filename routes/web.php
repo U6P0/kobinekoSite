@@ -4,6 +4,8 @@ use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\MountainController;
+use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\RegisterController;
 
 /*
 |--------------------------------------------------------------------------
@@ -27,6 +29,11 @@ Route::get('/', function () {
 });
 
 Route::get('/mountain', [MountainController::class, 'index']);
+Route::get('/profile', [ProfileController::class, 'index']);
+Route::get('/register', [RegisterController::class, 'index']);
+
+//登録処理
+Route::post('/register',[RegisterController::class, 'store']);
 
 /*
 Route::prefix('auth')->group(function () {

@@ -5,7 +5,8 @@
     
 <div class="container">
   <div class="row">
-
+    <div class="col">
+            
 <table class="table table-bordered" id="mountain-table">
     <tbody>
         <td>番号</td>
@@ -33,7 +34,8 @@
     @endforeach
 </tbody>
 </table>
-   
+
+</div>   
 </div>
 </div>
 

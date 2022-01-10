@@ -45,7 +45,10 @@
             <li class="nav-item">
             @auth
                 <img src="{{ Auth::user()->avatar }}" width="48" height="48">
+                <a class="navbar-brand" href="./profile">profile</a>
+                <a class="navbar-brand" href="./register">登った山の登録</a>
                 <a class="navbar-brand" href="./auth/twitter/logout">logout</a>
+                
             @else
                 <img src="{{ asset('/image/twitter.png') }}" width="48" height="48" alt="twitter image" title="twitter image">
                 <a class="navbar-brand" href="./auth/twitter">twitter login</a>
