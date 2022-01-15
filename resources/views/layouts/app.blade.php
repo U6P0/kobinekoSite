@@ -22,6 +22,15 @@
     <!-- Styles -->
     <link href="{{ asset('/css/app.css') }}" rel="stylesheet">
 
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-J8NLMWS1BW"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-J8NLMWS1BW');
+</script>
 
 </head>
 <body>
@@ -36,10 +45,10 @@
         <ul class="navbar-nav margin-right: auto">　
             <li class="nav-item"><a class="nav-link" href="./">Home</a></li>
             <li class="nav-item"><a class="nav-link" href="./mountain">百名山一覧</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">登頂数ランキング</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">登頂数ランキング(まだ作成中)</a></li>
         
             <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
+                <a class="nav-link" href="#">About(まだないです)</a>
             </li>
     
             <li class="nav-item">

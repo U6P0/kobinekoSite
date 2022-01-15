@@ -1,7 +1,8 @@
 @extends('layouts.app')
 @section('content')
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+<script src="{{ asset('/js/jquery.min.js') }}"></script>
 <script>
 $(document).ready(function(){
 
@@ -10,6 +11,19 @@ $(document).ready(function(){
 
     var textClimed = "rgb(245,245,245)";
     var textNotClimed = "rgb(0,0,0)";
+
+    
+    var currentVal = Number( $('.countYama').html() );
+    
+    @foreach($registeredmountains as $mount)
+    $("#mountainid{{ $mount->mountainnumber }}").val(1);
+    currentVal = Number( $('.countYama').html() );
+    $('.countYama').html(currentVal + 1);
+    $("#{{ $mount->mountainnumber }}").css({ fill: textClimed});
+    $("#rpath{{ $mount->mountainnumber }}").css({ fill: Climed });
+    $("#path{{ $mount->mountainnumber }}").css({ fill: Climed });
+    @endforeach
+
 
     for (var yamaId=1; yamaId<=100; yamaId++) {
 

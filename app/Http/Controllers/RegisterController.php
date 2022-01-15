@@ -15,7 +15,8 @@ class RegisterController extends Controller
     //
     public function index() {
 
-        return view('register');
+        $climedmountains = Climedmountain::where('user_id', Auth::user()->id)->get();
+        return view('register', ['registeredmountains' => $climedmountains]);
         
     }
     

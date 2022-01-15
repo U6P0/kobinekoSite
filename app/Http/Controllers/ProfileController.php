@@ -18,15 +18,10 @@ class ProfileController extends Controller
 {
     //
     public function index() {
-
-    /*
-        $mountains = Mountain::all();   // Eloquent"Member"で全データ取得
-        return view('mountain', [
-            "mountains" => $mountains
-        ]);
-        */
-        return view('profile');
-        
+       
+        $climedmountains = Climedmountain::where('user_id', Auth::user()->id)->get();
+        return view('profile', ['registeredmountains' => $climedmountains]);
+    
     }
     
 }

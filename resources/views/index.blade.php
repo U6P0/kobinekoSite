@@ -4,27 +4,23 @@
     <div class="container">
         <div class="row">
             <main class="col-md-12 col-lg-12">
-                <div class="card">
-                    <div class="card-header d-flex justify-content-between">
-                        <div>
-                            <ul class="nav nav-tabs card-header-tabs">
-                                <li class="nav-item">
-                                    未着手
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="card-body">
-                        <ul class="list-group">
-                            <li class="list-group-item d-flex justify-content-between align-items-center">
-                                テスト
-                            </li>
-                             <li class="list-group-item d-flex justify-content-between align-items-center">
-                                テスト
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+                <div class="col">
+                    
+            <p>
+        　　～～～このサイトについて～～～ </br>
+            どの山梨百名山に登ったかどうか登録して眺めるサイトです。 </br>
+            Twitterでログインして登録してね！ </br>
+            </p>
+            
+            <p>
+            このあたりを追加予定 </br>
+            ・登録した人がどこに登ったか見れるようにする </br>
+            今はまだ機能としてないので画像をWindows+Shift+Sキーでスクリーンショットをとってツイッターで自慢してね</br>
+            ・登った数のランキング表示 </br>
+            ・各山に登ったユーザーを一覧表示 </br>
+            </p>
+            
+            </div>
             </main>
         </div>
     </div>
